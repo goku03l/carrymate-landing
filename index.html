@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>CarryMate — Earn as you travel</title>
+<title>CarryMate - Earn as you travel</title>
 <meta name="description" content="CarryMate matches travellers with spare luggage space to people who need something carried. Free, direct, no middleman.">
 <meta name="theme-color" content="#0a1a1a">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,6 +13,8 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+<div class="ambient" aria-hidden="true"><span></span><span></span></div>
 
 <nav class="nav">
   <div class="nav__inner">
@@ -30,10 +32,6 @@
       <p class="eyebrow" id="heroEyebrow"></p>
       <h1 id="heroHeadline"></h1>
       <p class="lede" id="heroLede"></p>
-      <div class="hero__ctas">
-        <a class="btn btn--primary" id="heroCtaPrimary" data-app-link href="#" target="_blank" rel="noopener"></a>
-        <a class="btn btn--ghost" id="heroCtaSecondary" data-app-link href="#" target="_blank" rel="noopener"></a>
-      </div>
       <p class="hero__note" id="heroNote"></p>
     </div>
 
@@ -78,10 +76,11 @@
   <div class="features" id="featuresGrid"></div>
 </section>
 
+<br>
+
 <section class="trust">
   <div class="wrap trust__inner reveal">
     <p id="trustText"></p>
-    <a class="btn btn--ghost" id="trustCta" data-app-link href="#" target="_blank" rel="noopener"></a>
   </div>
 </section>
 
@@ -89,9 +88,6 @@
   <p class="eyebrow" id="finalEyebrow"></p>
   <h2 id="finalHeadline"></h2>
   <p id="finalText"></p>
-  <div class="hero__ctas">
-    <a class="btn btn--primary" id="finalCta" data-app-link href="#" target="_blank" rel="noopener"></a>
-  </div>
 </section>
 
 <footer>
