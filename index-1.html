@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CarryMate — Earn as you travel</title>
+<meta name="description" content="CarryMate matches travellers with spare luggage space to people who need something carried. Free, direct, no middleman.">
+<meta name="theme-color" content="#0a1a1a">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Cpath d='M8 6 L30 6 C32 6 34 8 34 10 L34 30 C34 32 32 34 30 34 L8 34 L2 26 L2 14 Z' fill='%230a1a1a' stroke='%2352b788' stroke-width='2.6' stroke-linejoin='round'/%3E%3Ccircle cx='10' cy='20' r='3' fill='none' stroke='%2352b788' stroke-width='2'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="ambient" aria-hidden="true"><span></span><span></span></div>
+
+<nav class="nav">
+  <div class="nav__inner">
+    <div class="wordmark">
+      <svg viewBox="0 0 40 40" width="26" height="26"><path d="M8 6 L30 6 C32 6 34 8 34 10 L34 30 C34 32 32 34 30 34 L8 34 L2 26 L2 14 Z" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linejoin="round"/><circle cx="10" cy="20" r="3" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+      <span id="brandName"></span>
+    </div>
+    <a class="btn btn--primary btn--sm" id="navCta" data-app-link href="#" target="_blank" rel="noopener"></a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap hero__inner">
+    <div>
+      <p class="eyebrow" id="heroEyebrow"></p>
+      <h1 id="heroHeadline"></h1>
+      <p class="lede" id="heroLede"></p>
+      <p class="hero__note" id="heroNote"></p>
+    </div>
+
+    <div class="hero__visual">
+      <svg class="flightpath" viewBox="0 0 300 340" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M20,40 Q150,10 280,300" />
+        <circle class="plane" r="4" cx="20" cy="40">
+          <animateMotion dur="6s" repeatCount="indefinite" path="M0,0 Q130,-30 260,260" rotate="auto"/>
+        </circle>
+      </svg>
+      <div class="tag" id="heroTag">
+        <div class="tag__hole"></div>
+        <div class="tag__body">
+          <p class="tag__label">Traveller · posted just now</p>
+          <p class="tag__route"><span class="city" id="tagFrom">BLR</span><span class="arrow">✈</span><span class="city" id="tagTo">GOA</span></p>
+          <p class="tag__meta" id="tagMeta">12 Jul – 14 Jul · ~4 kg free</p>
+          <div class="tag__badges">
+            <span class="chip chip--green">₹500 quote</span>
+            <span class="chip chip--indigo">4 kg free</span>
+            <span class="chip chip--purple">✈️ Flight</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="wrap">
+  <div class="section__head reveal">
+    <p class="eyebrow" id="pathsEyebrow"></p>
+    <h2 id="pathsHeadline"></h2>
+  </div>
+  <div class="paths" id="pathsGrid"></div>
+</section>
+
+<section class="wrap">
+  <div class="section__head reveal">
+    <p class="eyebrow" id="featuresEyebrow"></p>
+    <h2 id="featuresHeadline"></h2>
+    <p id="featuresText"></p>
+  </div>
+  <div class="features" id="featuresGrid"></div>
+</section>
+
+<section class="trust">
+  <div class="wrap trust__inner reveal">
+    <p id="trustText"></p>
+  </div>
+</section>
+
+<section class="final wrap">
+  <p class="eyebrow" id="finalEyebrow"></p>
+  <h2 id="finalHeadline"></h2>
+  <p id="finalText"></p>
+</section>
+
+<footer>
+  <div class="wrap footer__inner">
+    <span id="footerText"></span>
+    <span>
+      <a id="footerAppLink" data-app-link href="#" target="_blank" rel="noopener"></a>
+      &nbsp;·&nbsp;
+      <a id="footerRepoLink" data-repo-link href="#" target="_blank" rel="noopener"></a>
+    </span>
+  </div>
+</footer>
+
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
